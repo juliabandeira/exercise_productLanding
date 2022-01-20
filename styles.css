@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Assistant", sans-serif;
+  background: #0dcfdf;
+  background-size: cover;
+  color: #113630;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+header,
+.hero,
+.about,
+.plans,
+form {
+  width: 90%;
+  margin: 2em auto;
+}
+
+@media (min-width: 1250px) {
+  header,
+  .hero,
+  .about,
+  .plans {
+    width: 80%;
+  }
+}
+
+header {
+  display: flex;
+  font-size: 1.2rem;
+}
+
+.logo {
+  font-family: "Leckerli One", cursive;
+  overflow-wrap: normal;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  margin-left: 5em;
+}
+
+.menu a {
+  padding: 2px 5px;
+}
+
+.menu li {
+  margin-right: 3em;
+}
+
+@media (max-width: 570px) {
+  .menu {
+    margin: auto 1em;
+  }
+
+  .menu li {
+    margin: 0 0 0 1em;
+  }
+}
+
+@media (min-width: 1080px) {
+  .hero {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hero-info {
+    width: 40%;
+  }
+}
+
+.hero-title {
+  font-family: "Advent Pro", sans-serif;
+  font-size: 6rem;
+  line-height: 0.8;
+  margin: 1em 0 0.5em;
+}
+
+.iframe_dimension {
+  margin-top: 6em;
+}
+
+@media (max-width: 1080px) {
+  .iframe_dimension {
+    margin: 3em auto;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .iframe_dimension iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.buttons {
+  display: flex;
+  margin-top: 2em;
+}
+
+.button {
+  font-weight: bold;
+  padding: 1em 3em;
+  background-color: #ff9866;
+  border: 1px solid #ff9866;
+  border-radius: 10px;
+}
+
+.button-free {
+  margin-right: 2em;
+}
+
+.button:hover {
+  color: #0dcfdf;
+}
+
+.about,
+.plans,
+form {
+  margin-top: 6em;
+}
+
+.plan {
+  margin: 5em 0;
+  text-align: center;
+}
+
+@media (min-width: 620px) {
+  .plans-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .plan {
+    width: 40%;
+    margin: 0;
+  }
+}
+
+.plan * {
+  margin-bottom: 2em;
+}
+
+.plan h3 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1.3rem;
+}
+
+input {
+  height: 2rem;
+}
+
+textarea,
+input {
+  margin: 1em 0 2em;
+  border-radius: 5px;
+  border: 1px solid #113630;
+  background-color: #0dcfdf;
+  padding: 1em;
+}
+
+@media (min-width: 970px) {
+  form {
+    width: 50%;
+  }
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+  border: 2px solid #ff9866;
+}
